@@ -15,6 +15,13 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  html { 
+    background: url(../) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 }
 
 /*
@@ -96,8 +103,12 @@ textarea {
 
 body{
   padding: .75em;
-  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-
+  background-image: url(../img/background.png);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* background-size: 100%vh;
+  background-size: 100%vw; */
+  background-attachment:fixed;
 }
 
 div{
@@ -140,8 +151,9 @@ a{
 }
 
 .container{
-  background: rgb(253,252,251);
-  background: radial-gradient(circle, rgba(253,252,251,1) 0%, rgb(238, 222, 210) 100%);
+  background: rgb(253,252,251, 0.5);
+  
+
 }
 
 .header{
