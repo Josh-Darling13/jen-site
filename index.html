@@ -15,7 +15,9 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -30,54 +32,79 @@
       <a id="header"></a>
       <h1>Jen Snow</h1>
       <hr />
-
-
-      <div="nav-bar">
-        <p>and maybe a nav bar here</p>
+      <h2 style="text-align: right; color:gray;">actress/author</h2>
+      <div class="nav-bar">
         <ul class="nav-links">
-
-          <li><a href="#header">header</a></li>
           <li><a href="#bio">bio</a></li>
           <li><a href="#acting">acting</a></li>
           <li><a href="#writing">writing</a></li>
           <li><a href="#gallery">gallery</a></li>
           <li><a href="#contact">contact</a></li>
-
         </ul>
+      </div>
     </div>
-  </div>
-
-  </div>
-
-  <div class="bio" id="bio">
-    <a id="bio"></a>
-    <p>pic and 200 word or less bio</p>
-    <div id="bioPic">head shot here</div>
-    <div id="bioText">Bio Text here</div>
-  </div>
-
-  <div class="acting" id="acting">
-    <a id="acting"></a>
-    <p>list of acting credits IMDB etc</p>
-  </div>
-
-
-  <div class="writing" id="writing">
-    <a id="writing"></a>
-    <p>Links to writing projects</p>
-  </div>
-
-  <div class="gallery" id="gallery">
-    <a id="gallery"></a>
-    <p>Link to a gallery page filled with glam shots</p>
-  </div>
-
-  <div class="contact" id="contact">
-    <a id="contact"></a>
-    <p>How to get a hold of Jen for gigs.</p>
-  </div>
-
-
+    <div class="bio" id="bio">
+      <a id="bio"></a>
+      <p>pic and 200 word or less bio</p>
+      <div id="bioPic">
+        <img src="./img/headshot.jpg">
+      </div>
+      <div id="bioText">
+        <h3>Stuff about Jen</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est
+          laborum.
+        </p>
+      </div>
+      <a href="#header">to top</a>
+    </div>
+    <div class="acting" id="acting">
+      <a id="acting"></a>
+      <div id="mostImpresive">
+        <p>list of most impressive acting credits here,<br /> IMDB credits, etc</p>
+        <p>show more credits</p>
+        <div id="addtionalAccting">
+          <p>On click additional credits exposed</p>
+          <p>hide</p>
+        </div>
+      </div>
+      <a href="#header">to top</a>
+    </div>
+    <div class="writing" id="writing">
+      <a id="writing"></a>
+      <h2>Writings</h2>
+      <p>Short description of Jen's writings</p>
+      most recent writings:<br />
+      <div id="book-bar">
+        <ul class="book-links">
+          <li><a href="scribblers chambers.html" class="nav-link" id="nav-scribblers chambers">scribblers chambers</a>
+          </li>
+          <li><a href="book 1.html" class="nav-link" id="nav-book 1">book 1</a></li>
+          <li><a href="book 2.html" class="nav-link" id="nav-book 2">book 2</a></li>
+          <li><a href="book 3.html" class="nav-link" id="nav-book 3">book 3</a></li>
+          <li><a href="book 4.html" class="nav-link" id="nav-book 4">book 4</a></li>
+        </ul>
+      </div>
+      <p>click here to see more writings</p>
+      <div id="addtionalAccting">
+        <p>On click additional writing credits exposed</p>
+        <p>hide</p>
+      </div>
+      <a href="#header">to top</a>
+    </div>
+    <div class="gallery" id="gallery">
+      <a id="gallery"></a>
+      <p>Link to a gallery page filled with glam shots</p>
+      <a href="#header">to top</a>
+    </div>
+    <div class="contact" id="contact">
+      <a id="contact"></a>
+      <p>How to get a hold of Jen for gigs.</p>
+      <a href="#header">to top</a>
+    </div>
   </div>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
