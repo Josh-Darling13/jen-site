@@ -94,17 +94,37 @@ textarea {
 
   /* CSS Classes */
 
+body{
+  padding: .75em;
+}
+
+div{
+  border: #000 solid 1px;
+}
+
+
 .container{
-  
+
 }
 
 .header{
 
 }
 
+.nav-links{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .bio{
 
 }
+
+#bioPic{}
+
+#bioText{}
 
 .acting{
 
