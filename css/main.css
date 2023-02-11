@@ -105,6 +105,10 @@ div{
   border: #000 solid 1px;
   background-color: aliceblue;
   margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 8px 6px -6px gray;
+  border-radius: 10px;
 }
 
 h1{
@@ -135,11 +139,9 @@ a{
   font-weight: bold;
 }
 
-
-
-
 .container{
-
+  background: rgb(253,252,251);
+  background: radial-gradient(circle, rgba(253,252,251,1) 0%, rgb(238, 222, 210) 100%);
 }
 
 .header{
@@ -150,7 +152,9 @@ a{
 .nav-bar{
   padding: 0%;
   margin: 0%;
+
 }
+
 
 .nav-links{
 
@@ -191,6 +195,14 @@ img{
 }
 
 #bioText{}
+
+.toTop{
+  text-align: center;
+  width: 50%;
+  transition: 0.5s;
+
+
+}
 
 .acting{
 
