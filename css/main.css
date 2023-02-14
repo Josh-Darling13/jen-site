@@ -15,13 +15,11 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  html { 
-    background: url(../) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+  background: url(../) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /*
@@ -94,20 +92,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-  /**************************************
-
-  *****************************************/
-
-
-  /* CSS Classes */
-
 body{
   padding: .75em;
   background-image: url(../img/background.png);
   background-size: cover;
-  /* background-repeat: no-repeat; */
- background-size: 100%vh;
-   /* background-size: 100%vw; */
+  background-size: 100%vh;
   background-attachment:fixed;
 }
 
@@ -151,25 +140,18 @@ a{
 }
 
 .container{
-  background: rgb(253,252,251, 0.5);
-  
-
+  background: rgb(253,252,251, 0.3);
 }
 
 .header{
-
-
 }
 
 .nav-bar{
   padding: 0%;
   margin: 0%;
-
 }
 
-
 .nav-links{
-
   display: flex;
   align-items: flex-start;
   flex-flow: row;
@@ -206,14 +188,18 @@ img{
   border-radius: 10px;
 }
 
+#picAndBio{
+  margin: 0px;
+  padding: 0px;
+  border: none;
+}
+
 #bioText{}
 
 .toTop{
   text-align: center;
   width: 50%;
   transition: 0.5s;
-
-
 }
 
 .acting{
@@ -227,6 +213,11 @@ img{
 
 .gallery{
 
+}
+
+.glamShot{
+  width: 100%;
+  height: auto;
 }
 
 .contact{
@@ -259,20 +250,17 @@ img{
 
 }
 
-/* scroll down for elements by #id:hover*/
-/* CSS id:hover */
+#contact-links{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
 a:hover{
 filter: brightness(200%);
 transition: 0.5s;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -364,11 +352,170 @@ transition: 0.5s;
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+
+
+
+@media only screen and (min-width: 767px) {
   /* Style adjustments for viewports that meet the condition */
+
+  div{
+    padding: 5%;
+    border: #000 solid 2px;
+    background-color: aliceblue;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+.container{
+  /* background: rgb(253,252,251, 0.3); */
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto;
+  /* justify-content: space-evenly; */
+  padding: 5%;
+  margin-left:  7%;
+  margin-right: 7%;
+  column-gap: 15px;
 }
 
-@media print,
+
+.grid-container > div {
+  /* background-color: rgba(255, 255, 255, 0.8);
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto; */
+  padding: 20px 0;
+
+}
+
+/*
+grid-column-start: 1;
+grid-column-end: 4;
+
+grid-row-start: 1;
+grid-row-end: 3;
+*/
+.header{
+  width: 90%;
+  height: auto;
+
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2; 
+}
+
+.bio{
+  width: 90%;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4; 
+}
+
+.acting{
+
+  width: 90%;
+
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2; 
+  /* grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2; */
+
+}
+
+.writing{
+  width: 90%;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+.gallery{
+  width: 90%;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 4;
+}
+
+#contact{
+  width: 90%;
+  height: auto;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 5;
+}
+.contactItems{
+font-size: 1.75em;
+}
+
+.toTop{
+  font-size: 2em;
+  text-align: center;
+  width: 50%;
+  transition: 0.5s;
+}
+
+.photoContainer{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 25px;
+}
+
+#pic1{
+  width: auto;
+  padding: 0;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+#pic2{
+  width: auto;
+  padding: 0;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+#pic3{
+  width: auto;
+  padding: 0;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+#pic4{
+  width: auto;
+  padding: 0;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+
+}
+
+
+
+
+
+@media print,{
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
