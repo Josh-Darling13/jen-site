@@ -106,8 +106,8 @@ body{
   background-image: url(../img/background.png);
   background-size: cover;
   /* background-repeat: no-repeat; */
-  /* background-size: 100%vh;
-  background-size: 100%vw; */
+ background-size: 100%vh;
+   /* background-size: 100%vw; */
   background-attachment:fixed;
 }
 
