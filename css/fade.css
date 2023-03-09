@@ -1,0 +1,14 @@
+.hidden{
+    padding: 0px;
+    margin: 0px;
+    border:none;
+    box-shadow: none;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+}
+
+
